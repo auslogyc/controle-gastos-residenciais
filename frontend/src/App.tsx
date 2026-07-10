@@ -10,11 +10,9 @@ export default function App() {
       <div className="app-layout">
         {/* Barra lateral de navegação */}
         <aside className="sidebar">
-          {/* Logo e título do sistema */}
+          {/* Logo do sistema */}
           <div className="sidebar-header">
             <div className="sidebar-logo">💰</div>
-            <h1 className="sidebar-title">Controle de Gastos</h1>
-            <p className="sidebar-subtitle">Residenciais</p>
           </div>
 
           {/* Links de navegação */}
