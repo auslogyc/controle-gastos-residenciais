@@ -44,7 +44,7 @@ export default function App() {
 
           {/* Rodapé da sidebar */}
           <div className="sidebar-footer">
-            <p>© 2026 GCES</p>
+            <p>© Controle de Gastos Residenciais</p>
           </div>
         </aside>
 
