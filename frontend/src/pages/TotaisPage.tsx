@@ -50,18 +50,18 @@ export default function TotaisPage() {
 
       {/* Cards de resumo geral */}
       {totais && (
-        <div className="totais-cards">
-          <div className="totais-card totais-receita">
-            <span className="totais-card-label">Total de Receitas</span>
-            <span className="totais-card-valor">{formatarMoeda(totais.totalGeralReceitas)}</span>
+        <div className="totais-gerais">
+          <div className="total-card">
+            <span className="total-label">Total de Receitas</span>
+            <span className="total-value valor-positivo">{formatarMoeda(totais.totalGeralReceitas)}</span>
           </div>
-          <div className="totais-card totais-despesa">
-            <span className="totais-card-label">Total de Despesas</span>
-            <span className="totais-card-valor">{formatarMoeda(totais.totalGeralDespesas)}</span>
+          <div className="total-card">
+            <span className="total-label">Total de Despesas</span>
+            <span className="total-value valor-negativo">{formatarMoeda(totais.totalGeralDespesas)}</span>
           </div>
-          <div className={`totais-card ${totais.saldoGeral >= 0 ? 'totais-saldo-positivo' : 'totais-saldo-negativo'}`}>
-            <span className="totais-card-label">Saldo Geral</span>
-            <span className="totais-card-valor">{formatarMoeda(totais.saldoGeral)}</span>
+          <div className="total-card">
+            <span className="total-label">Saldo Geral</span>
+            <span className={`total-value ${totais.saldoGeral >= 0 ? 'valor-positivo' : 'valor-negativo'}`}>{formatarMoeda(totais.saldoGeral)}</span>
           </div>
         </div>
       )}
